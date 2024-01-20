@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="index.js"></script>
+	<table cellpadding="15">
+		<tr>
+			<td>Введите сумму:</td>
+			<td></td>
+            <td></td>
+			<td>KZT (тенге)</td>
+			<td>UDS (доллар)</td>
+			<td>EURO (евро)</td>
+		</tr>
+		<tr>
+			<td>
+				<input class="form-control" type="" id="summa" onchange="check()"> 
+			</td>
+            <td>
+                <select class="form-select" id="qwerty" onchange="check()">
+                <option value="b">BUY</option>
+                <option value="s">SELL</option>
+                </select>
+            </td>
+			<td>
+				<select class="form-select" id="convert" onchange="check()">
+					<option value="KZT">TENGE</option>
+					<option value="USD">DOLLAR</option>
+					<option value="EUR">EURO</option>
+				</select>
+			</td>
+			<td>
+				<input class="form-control" id="KZT" readonly>
+			</td>
+			<td>
+				<input class="form-control" id="USD" readonly>
+			</td>
+			<td>
+				<input class="form-control" id="EUR" readonly>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
